@@ -17,7 +17,7 @@ html {
   -webkit-text-size-adjust: 100%;
 }
 
-body {
+/* body {
   background: radial-gradient(
       circle at top,
       rgba(241, 210, 70, 0.98),
@@ -27,6 +27,12 @@ body {
   background-repeat: repeat;
   background-size: 100% 100%, 30% 30%, 100% 100%;
   min-height: 110rem;
+} */
+
+body {
+  background-color:brown;
+  min-height: 80vh;
+  min-width: 80dvh;
 }
 
 header {

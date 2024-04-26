@@ -50,7 +50,7 @@ h1 {
   font-family: 'Caprasimo', cursive;
   font-size: 3rem;
   margin: 0 auto 3rem auto;
-  color: #3f3b00;
+  color: #00FFA2;
 }
 
 #game-container {
@@ -94,7 +94,8 @@ h1 {
   width: 2rem;
   border: none;
   background: none;
-  color: #c3ba78;
+  /* color: #c3ba78; */
+  color: #FCFF97;
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -248,7 +249,8 @@ ol {
 
 #log {
   max-width: 20rem;
-  color: #3f3b00;
+  /* color: #3f3b00; */
+  color: #00FFA2;
   list-style: none;
   margin: 2rem auto;
   padding: 0;

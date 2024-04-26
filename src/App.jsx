@@ -30,6 +30,8 @@ function App() {
 		gameBoard[row][col] = player;
 	}
 
+	let winner = gameTurns.length > 0 && checkWin(gameBoard, gameTurns[0]);
+
 	const handleChangeTurn = (rowIndex, colIndex) => {
 		//setActivePlayer((prev) => (prev === "X" ? "O" : "X"));
 		setGameTurns((prevTurns) => {
@@ -45,8 +47,6 @@ function App() {
 				...prevTurns,
 			];
 		});
-		if (gameTurns.length > 0 && checkWin(gameBoard, gameTurns[0]))
-			console.log(`Player ${gameTurns[0].player} wins!`);
 	};
 	return (
 		<>
@@ -65,6 +65,7 @@ function App() {
 						isActive={activePlayer === "O"}
 					/>
 				</ol>
+				{winner && <p>You WON, {winner}</p>}
 				<GameBoard
 					board={gameBoard}
 					onChangeTurn={handleChangeTurn}
